@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/21743516/README.md)
 <h1 align="center">🎁 Amigo Secreto – Challenge Alura ONE</h1>
 
 <p align="center">
