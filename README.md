@@ -24,7 +24,7 @@ Aplicação desenvolvida no <b>Challenge ONE - Alura</b> para praticar lógica d
 ## 📸 Demonstração
 
 <p align="center">
-  <img src="https://github.com/SietSiet/Amigo-Secreto---Alura/raw/main/assets/tela-inicial.png" alt="Tela Inicial do Amigo Secreto">
+  <img src="https://github.com/SietSiet/Amigo-Secreto---Alura/raw/07fbe4216ce2ac9903849029ef5eacf0bd59eae1/assets/Tela%20inicial.png" alt="Tela Inicial do Amigo Secreto">
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ Aplicação desenvolvida no <b>Challenge ONE - Alura</b> para praticar lógica d
 <br>
 
 <p align="center">
-  <img src="https://github.com/SietSiet/Amigo-Secreto---Alura/raw/main/assets/tela-sorteio.png" alt="Resultado do Sorteio e Histórico">
+  <img src="https://github.com/SietSiet/Amigo-Secreto---Alura/raw/07fbe4216ce2ac9903849029ef5eacf0bd59eae1/assets/Tela%20de%20resultado.png" alt="Resultado do Sorteio e Histórico">
 </p>
 
 <p align="center">
@@ -42,7 +42,6 @@ Aplicação desenvolvida no <b>Challenge ONE - Alura</b> para praticar lógica d
 </p>
 
 ---
-
 ## 🛠️ Tecnologias Utilizadas
 
 <div align="center">
