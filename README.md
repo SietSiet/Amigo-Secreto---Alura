@@ -22,15 +22,6 @@ Aplicação desenvolvida no <b>Challenge ONE - Alura</b> para praticar lógica d
 
 ---
 
-## 📸 Demonstração
-
-<p align="center">
-  <img src="coloque-o-link-do-gif-aqui" alt="Demonstração do Amigo Secreto">
-  <br>
-  💡 **Substitua "coloque-o-link-do-gif-aqui" pelo link do seu GIF ou vídeo.** Você pode usar serviços como o Giphy ou gravar a tela do seu computador.
-</p>
-
----
 
 ## 🛠️ Tecnologias Utilizadas
 
