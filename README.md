@@ -21,7 +21,27 @@ Aplicação desenvolvida no <b>Challenge ONE - Alura</b> para praticar lógica d
 - 🔄 **Histórico de Sorteios** para visualizar os resultados anteriores.
 
 ---
+## 📸 Demonstração
 
+<p align="center">
+  <img src="https://i.imgur.com/link-da-sua-primeira-imagem.jpg" alt="Tela Inicial do Amigo Secreto">
+</p>
+
+<p align="center">
+  Tela inicial da aplicação, onde o usuário pode digitar os nomes dos participantes e iniciar o sorteio.
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://i.imgur.com/link-da-sua-segunda-imagem.png" alt="Resultado do Sorteio e Histórico">
+</p>
+
+<p align="center">
+  Tela exibindo o resultado do sorteio, e após colocar a senha o histórico das rodadas anteriores.
+</p>
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
