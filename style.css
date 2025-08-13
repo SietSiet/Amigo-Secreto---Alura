@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-primary: #191D88; /* Azul escuro */
+    --color-secondary: #5840BB; /* Lilás */
+    --color-tertiary: #C4C4C4; /* Cinza para o botão de adicionar */
+    --color-button: #4B69FD; /* Azul para o botão principal */
+    --color-button-hover: #3f55d0; /* Azul escuro para o hover */
+    --color-text: #FFFFFF; /* Branco para o texto */
     --color-white: #FFFFFF;
 }
 
@@ -21,6 +21,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Inter", sans-serif;
+    color: var(--color-text);
 }
 
 .main-content {
@@ -28,15 +30,57 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    position: relative;
+}
+
+/* Tela de carregamento (GIF) */
+.loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.loading-screen img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 /* Banner */
 .header-banner {
     flex: 40%;
     display: flex;
+    flex-direction: column; /* Para alinhar o texto e a imagem verticalmente */
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+}
+
+/* Novo estilo para o título de texto */
+.header-title {
+    font-family: "Merriweather", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaçamento entre o título e a próxima seção */
+}
+
+.header-banner img {
+    /* Ajuste para diminuir a imagem do topo */
+    max-width: 300px;
+    height: auto;
 }
 
 /* Seção de entrada */
@@ -47,82 +91,132 @@ body {
     border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     width: 100%;
 }
 
-/* Títulos */
-.main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
 }
 
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container img {
+    /* Ajuste para diminuir as imagens de ilustração */
+    max-width: 250px;
+    height: auto;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Títulos */
 .section-title {
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-white);
     margin: 10px 0;
     text-align: center;
+    margin-bottom: 30px; 
 }
 
 /* Contêineres de entrada e botão */
-.input-wrapper {
+.input-wrapper, .input-wrapper-sorteador {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
+    max-width: 400px;
+    margin: 10px 0;
 }
 
 .input-name {
-    width: 100%;
+    flex: 1;
     padding: 10px;
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .button-container {
     width: 300px;
     justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
 }
 
 /* Estilos de botão */
-button {
+.button-add {
     padding: 15px 30px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
-    border-radius: 25px;
+    border-radius: 0 25px 25px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-}
-
-.button-add {
     background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    color: #444444;
 }
 
 .button-add:hover {
     background-color: #a1a1a1;
+}
+
+/* Botão de sortear */
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #000;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-draw img {
+    margin-right: 10px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Novo estilo para o botão "Ver meu amigo" */
+.button-draw-sm {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-button);
+}
+
+.button-draw-sm:hover {
+    background-color: var(--color-button-hover);
 }
 
 /* Listas */
@@ -131,7 +225,25 @@ ul {
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding: 0;
+    max-width: 400px;
+}
+
+.name-list li {
+    background-color: var(--color-white);
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #444444;
+}
+
+.name-list li:hover {
+    color: var(--color-primary);
+    font-weight: bold;
 }
 
 .result-list {
@@ -142,21 +254,23 @@ ul {
     text-align: center;
 }
 
-/* Botão de sortear título */
-.button-draw {
-    display: flex;
-    align-items: center;
+.historico-container {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
     width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+    max-width: 600px;
+    text-align: center;
 }
 
-.button-draw img {
-    margin-right: 40px;
+.historico-container h3 {
+    margin-bottom: 10px;
+    color: var(--color-primary);
 }
 
-.button-draw:hover {
-    background-color: var(--color-button-hover);
+#listaHistorico li {
+    text-align: left;
+    color: #444444; /* Adiciona a cor do texto para o histórico */
 }
